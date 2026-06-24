@@ -10,8 +10,7 @@
 </p>
 
 <p align="center">
-  <!-- Replace OWNER/REPO with your GitHub slug to activate these badges -->
-  <a href="../../actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/OWNER/REPO/ci.yml?label=CI"></a>
+  <a href="https://github.com/NagaYu/llama4-moe-router-debugger/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/NagaYu/llama4-moe-router-debugger/ci.yml?label=CI"></a>
   <img alt="Python" src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
 </p>
