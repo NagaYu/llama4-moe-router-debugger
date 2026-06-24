@@ -1,0 +1,34 @@
+# ──────────────────────────────────────────────────────────────────────────
+# Llama 4 MoE Prompt Router & Debugger — Python dependencies
+# Tested with Python 3.10 – 3.12
+# ──────────────────────────────────────────────────────────────────────────
+
+# --- Core inference stack -------------------------------------------------
+# Llama 4 (Maverick / Scout) support landed in Transformers >= 4.51.
+torch>=2.4.0
+transformers>=4.51.0
+accelerate>=0.34.0
+safetensors>=0.4.4
+sentencepiece>=0.2.0
+tokenizers>=0.20.0
+
+# Optional but strongly recommended for fitting MoE weights on a single host.
+# Comment these out if you only run against the mock backend.
+bitsandbytes>=0.43.0 ; platform_system == "Linux"
+
+# --- Backend (FastAPI) ----------------------------------------------------
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+numpy>=1.26.0
+httpx>=0.27.0
+sse-starlette>=2.1.0
+
+# --- Frontend (Streamlit dashboard) --------------------------------------
+streamlit>=1.37.0
+pandas>=2.2.0
+plotly>=5.23.0
+requests>=2.32.0
+
+# --- Dev / test (optional; needed only to run `pytest`) ------------------
+pytest>=8.0.0

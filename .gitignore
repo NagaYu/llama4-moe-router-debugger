@@ -1,0 +1,92 @@
+# ──────────────────────────────────────────────────────────────────────────
+# Model weights, checkpoints & caches  (NEVER commit these — they are huge and
+# are governed by the Llama 4 Community License)
+# ──────────────────────────────────────────────────────────────────────────
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+*.onnx
+*.h5
+*.msgpack
+
+# Hugging Face / Torch / dataset caches
+.cache/
+hf_cache/
+huggingface/
+**/.huggingface/
+models/
+checkpoints/
+weights/
+*.lock
+datasets/
+.torch/
+
+# Captured traces / exported artefacts
+traces/
+*.trace.json
+outputs/
+runs/
+
+# ──────────────────────────────────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+.installed.cfg
+wheels/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ──────────────────────────────────────────────────────────────────────────
+# Tooling / test / coverage
+# ──────────────────────────────────────────────────────────────────────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# ──────────────────────────────────────────────────────────────────────────
+# Secrets & environment
+# ──────────────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ──────────────────────────────────────────────────────────────────────────
+# Editors / OS
+# ──────────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

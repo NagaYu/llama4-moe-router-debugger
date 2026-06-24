@@ -1,0 +1,35 @@
+# Keep the build context tiny and reproducible.
+.git/
+.github/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+
+# Never ship weights / caches / traces into the image
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+models/
+checkpoints/
+weights/
+hf_cache/
+.cache/
+traces/
+outputs/
+
+# Local cruft
+.DS_Store
+*.swp
+.env
+.env.*
+.idea/
+.vscode/
